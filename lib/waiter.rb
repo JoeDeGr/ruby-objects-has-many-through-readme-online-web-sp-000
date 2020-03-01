@@ -27,7 +27,7 @@ class Waiter
     end
     best_tipped_meal.customer
   end
-  
+
   def self.oldest_suctomer
     oldest_age = 0
     oldest_customer = nil
