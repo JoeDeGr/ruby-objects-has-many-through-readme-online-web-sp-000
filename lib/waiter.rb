@@ -27,8 +27,14 @@ class Waiter
     end
     best_tipped_meal.customer
   end
-
-
-
-
+  
+  def self.oldest_suctomer
+    oldest_age = 0
+    oldest_customer = nil
+    self.all.each do |customer|
+      oldest_age = customer.age
+      oldest_customer = customer
+    end
+    oldest_customer
+  end
 end
